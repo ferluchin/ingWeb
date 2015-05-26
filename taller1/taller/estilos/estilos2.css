@@ -1,0 +1,75 @@
+body{
+    background-position:center;
+    background-image: url("../images/imgfondo2.jpg");
+}
+h4{
+    margin: 1em;
+    font-family: 'lucida sans unicode', 'lucida grande', sans-serif;
+    color: #CCE0E2;    
+    text-align: right;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 0 black;
+}
+h3{
+    margin: 1em;
+    font-family: 'lucida sans unicode', 'lucida grande', sans-serif;
+    color: white;    
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 0 black;
+}
+h2{
+    margin: 1em;
+    font-family: 'lucida sans unicode', 'lucida grande', sans-serif;
+    font-size: 18px;
+    color: white;    
+    text-align: justify;
+    text-shadow: 1px 1px 0 black;
+}
+div{
+    color: white;
+}
+label{
+    font-family: georgia, serif;
+    color: #9EB2B4;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 0.4pt;
+    text-shadow: 1px 1px 0 black;
+}
+label b{
+    display: inline-block;
+}
+table{
+    width: 40%;
+}
+.btn{
+    font-family:Verdana,Helvetica;
+    font-weight:bold;
+    color:white;
+    text-shadow: 1px 1px 0 black;
+    background-color: #55696C;
+    border-color:#2E4143;
+    width:130px;
+}
+
+.warning{
+    background-color: black;
+}
+
+form{
+    margin-right:auto;
+    margin-left:auto;
+    width: 50%;
+}
+input{
+    color:black;
+}
+textarea{
+    color:black;
+}
+form input{
+    color:black;
+}

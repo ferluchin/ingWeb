@@ -1,0 +1,23 @@
+<?php
+include("include/site_config.php");
+include("include/clase_mysql.php");
+$miconexion = new clase_mysql;
+$miconexion->conectar($db_name,$db_host, $db_user,$db_password);
+
+	extract($_POST);	//extraer todos los valores del metodo post del formulario de actualizar
+	$sentencia="update contenidos set TITULO='$titulo', FECHA_P='$fecha', ESTADO='$estado', DESCRIPCION='$descripcion' where id='$id'";
+	$resent=mysql_query($sentencia);
+	if ($resent==null) {
+		echo "Error de procesamieno no se han actuaizado los datos";
+		echo '<script>alert("ERROR EN PROCESAMIENTO NO SE ACTUALIZARON LOS DATOS")</script> ';
+		header("location: admin.php");
+		
+		echo "<script>location.href='admin.php'</script>";
+	}else {
+		echo '<script>alert("REGISTRO ACTUALIZADO")</script> ';
+		
+		echo "<script>location.href='admin.php'</script>";
+
+		
+	}
+?>
